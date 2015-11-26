@@ -14,7 +14,6 @@
 		53251AFE0C455A960025416A /* HelloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC781FFF55E9F57F000001 /* HelloController.m */; settings = {ATTRIBUTES = (); }; };
 		53251AFF0C455A960025416A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC7820FF55E9F57F000001 /* main.m */; settings = {ATTRIBUTES = (); }; };
 		53251B010C455A960025416A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		53251B180C455B130025416A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53251B170C455B130025416A /* Info.plist */; };
 		53251B270C455B7B0025416A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53251B250C455B7B0025416A /* Credits.rtf */; };
 		53251B890C455D400025416A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53251B870C455D400025416A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		3159CF1A01FCC89F0BCB1529 /* SimpleCocoaApp Help Folder */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SimpleCocoaApp Help Folder"; sourceTree = SOURCE_ROOT; };
 		53251B080C455A960025416A /* SimpleCocoaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCocoaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		53251B170C455B130025416A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		53251B170C455B130025416A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53251B260C455B7B0025416A /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		53251B880C455D400025416A /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,9 +147,18 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 53251B0B0C455A970025416A /* Build configuration list for PBXProject "SimpleCocoaApp" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* HelloCocoa */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				53251AF30C455A960025416A /* SimpleCocoaApp */,
 			);
@@ -164,7 +172,6 @@
 			files = (
 				53251AF90C455A960025416A /* MainMenu.nib in Resources */,
 				53251AFA0C455A960025416A /* SimpleCocoaApp Help Folder in Resources */,
-				53251B180C455B130025416A /* Info.plist in Resources */,
 				53251B270C455B7B0025416A /* Credits.rtf in Resources */,
 				53251B890C455D400025416A /* InfoPlist.strings in Resources */,
 			);
@@ -217,6 +224,8 @@
 		53251B040C455A960025416A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -239,7 +248,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = (
 					"$(value)",
 					"-Wimplicit-function-declaration",
@@ -247,7 +256,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SimpleCocoaApp;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -263,10 +272,8 @@
 		53251B050C455A960025416A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -276,11 +283,11 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SimpleCocoaApp;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -300,16 +307,17 @@
 					i386,
 				);
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SimpleCocoaApp;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -323,21 +331,27 @@
 		53251B0C0C455A970025416A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		53251B0D0C455A970025416A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		53251B0E0C455A970025416A /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
 			};
 			name = Default;
 		};
