@@ -2,7 +2,7 @@
      File: Hello2.m 
  Abstract: The Hello2 class, a little controller class that displays dialogs;
  except for the dialog strings, this class is the same as Hello1. 
-  Version: 1.4 
+  Version: 1.5 
   
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
  Inc. ("Apple") in consideration of your agreement to the following 
@@ -42,7 +42,7 @@
  STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
  POSSIBILITY OF SUCH DAMAGE. 
   
- Copyright (C) 2011 Apple Inc. All Rights Reserved. 
+ Copyright (C) 2012 Apple Inc. All Rights Reserved. 
   
  */
 

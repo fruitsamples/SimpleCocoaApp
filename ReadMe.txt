@@ -5,7 +5,7 @@ SimpleCocoaApp is a small application that is meant to show some of the basic th
 
 
 Sample Requirements
-The supplied Xcode project was created using Xcode v3.2.5.  It's capable of running on Mac OS X 10.1 or later.
+The supplied Xcode project was created using Xcode v4.3 or later running under Mac OS X 10.7.x or later.
 
 
 About the Sample
@@ -16,17 +16,9 @@ There are three classes in this application:
 
 
 Changes from Previous Versions
+1.5 - Upgraded to support Xcode 4.3 and Mac OS X 10.7.
 1.4 - Upgraded to support 10.6, now builds 3-way Universal (ppc, i386, x86_64).
 1.1 - Upgraded to Xcode 2.4.1, minor edits, removed 1 compiler warning.
 1.0 - Displays different "Hello Cocoa" dialogs based on radio-button and PopUp menu selections, demonstrating on-the-fly code-swapping.
 
-
-Feedback and Bug Reports
-Please send all feedback about this sample by connecting to the Contact ADC page.
-Please submit any bug reports about this sample to the Bug Reporting page.
-
-
-Developer Technical Support
-The Apple Developer Connection Developer Technical Support (DTS) team is made up of highly qualified engineers with development expertise in key Apple technologies. Whether you need direct one-on-one support troubleshooting issues, hands-on assistance to accelerate a project, or helpful guidance to the right documentation and sample code, Apple engineers are ready to help you.  Refer to the Apple Developer Technical Support page.
-
-Copyright © 2000-2011 Apple Inc. All rights reserved.
+Copyright © 2000-2012 Apple Inc. All rights reserved.
